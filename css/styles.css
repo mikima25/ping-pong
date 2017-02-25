@@ -1,7 +1,6 @@
 header {
     width: 100%;
-    height: 100px
-
+    height: 100px;
 }
 h1 {
     text-align: center;
@@ -11,6 +10,12 @@ h1 {
 }
 h2 {
     font-family: Courgette;
+}
+h3 {
+    font-family: ABeeZee;
+}
+p {
+    font-family: Alex Brush;
 }
 main {
     text-align: center;
@@ -26,4 +31,8 @@ li {
 }
 .list {
     text-align: left;
+}
+#rules {
+    font-style: oblique;
+    font-family: Abril Fatface;
 }
