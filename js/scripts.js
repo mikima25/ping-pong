@@ -18,8 +18,8 @@ $(document).ready(function() {
     $("form#blank").submit(function(event) {
         $("#output").empty();
         var userInput = parseInt($("input#number").val());
-        var result = myPingPong(userInput);
-        result.forEach(function(output) {
+        var entry = myPingPong(userInput);
+        entry.forEach(function(output) {
         $("#userOutput").append("<li>" + output + "</li>");
         event.preventDefault();
     });
