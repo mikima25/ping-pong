@@ -13,15 +13,15 @@ for (var i = 1; i <= userInput; i++) {
 }
 return entry;
 }
-//front-end
-$(document).ready(function() {
-    $("form#blank").submit(function(event) {
+//User Interface Logic
+$(document).ready(function(){
+    $("#userInput").submit(function(event){
         $("#output").empty();
-        var userInput = parseInt($("input#number").val());
-        var entry = myPingPong(userInput);
-        entry.forEach(function(output) {
-        $("#userOutput").append("<li>" + output + "</li>");
+        var userInput = parseInt($("input#userInput").val());
+        var output = countUp(userInput);
+        output.forEach(function(item){
+        $("#output").append('<li>' + item + '</li>');
+        });
         event.preventDefault();
     });
-});
 });

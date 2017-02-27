@@ -32,16 +32,17 @@
                 </div>
                 </ul>
             </div>
-                <form id="blank">
-                    <div class="form-group">
-                        <label for="number">Enter your number:</label>
-                        <input id="number" type="text"></input>
-                        <button type="submit" class="btn" name="pingpong">Ping Pong!</button>
-                    </div>
-                </form>
-            <ul id ="output">
-                <p>Check out the listed number below</p>
+            <div class="form-group">
+             <form id="userInput" action="index.html" method="get">
+                <label for="userNumber">Enter your number here:</label>
+                <input id="countTo" type="number" name="number" value="">
+                <button type="submit" name="button">Ping Pong!</button>
+             </div>
+             </form>
+            <div class="output">
+             <ul id="output">
             </ul>
+            </div>
         </main>
     </body>
 </html>
